@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Curl Website 1
-      run: curl https://qsign-shirasuazusa.koyeb.app
+    - name: Curl SIGN_SERVER
+      run: curl ${{ secrets.SIGN_SERVER }}
       
-    - name: Curl Website 2
-      run: curl https://go-chatgpt-api-zyw8.onrender.com
+    - name: Curl GPT_API
+      run: curl ${{ secrets.GPT_API }}
 
     # Add more curl requests as needed
