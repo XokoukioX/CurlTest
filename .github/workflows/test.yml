@@ -10,9 +10,9 @@ jobs:
     
     steps:
     - name: Curl Website 1
-      run: curl -I -s -o /dev/null -w "%{http_code}" https://go-chatgpt-api-zyw8.onrender.com
+      run: curl -I -s -o /dev/null -w "%{http_code}" "https://qsign-shirasuazusa.koyeb.app"
       
     - name: Curl Website 2
-      run: curl -I -s -o /dev/null -w "%{http_code}" https://qsign-shirasuazusa.koyeb.app
+      run: curl -I -s -o /dev/null -w "%{http_code}" "https://go-chatgpt-api-zyw8.onrender.com"
 
     # Add more curl requests as needed
